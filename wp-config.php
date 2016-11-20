@@ -1,4 +1,11 @@
 <?php
+
+/**
+	For add env values
+*/
+
+require_once 'env.php';
+
 /**
  * The base configuration for WordPress
  *
@@ -34,15 +41,15 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 // ** MySQL settings - You can get this info from your web host  ** //
 
 if (WP_ENV == 'development') {
-    define('DB_NAME', 'mydb-dev');
-    define('DB_USER', 'root');
-    define('DB_PASSWORD', '');
-    define('DB_HOST', 'localhost');
+    define('DB_NAME', $_DB_NAME);
+    define('DB_USER', $_DB_USER);
+    define('DB_PASSWORD', $_DB_PASSWORD);
+    define('DB_HOST', $_DB_HOST);
 } else {
-    define('DB_NAME', 'mydb-prod');
-    define('DB_USER', 'username');
-    define('DB_PASSWORD', 'pasdword');
-    define('DB_HOST', 'mysql.mysite.com');
+    define('DB_NAME', $_DB_NAME);
+    define('DB_USER', $_DB_USER);
+    define('DB_PASSWORD', $_DB_PASSWORD);
+    define('DB_HOST', $_DB_HOST);
 } 
 
 //-----------------------------------------------------------------------------
