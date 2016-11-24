@@ -30,28 +30,6 @@ define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
-// ** MySQL settings - You can get this info from your web host ** //
-
-if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
-    define('WP_ENV', 'development');
-} else {
-    define('WP_ENV', 'production');
-}
-
-// ** MySQL settings - You can get this info from your web host  ** //
-
-if (WP_ENV == 'development') {
-    define('DB_NAME', $_DB_NAME);
-    define('DB_USER', $_DB_USER);
-    define('DB_PASSWORD', $_DB_PASSWORD);
-    define('DB_HOST', $_DB_HOST);
-} else {
-    define('DB_NAME', $_DB_NAME);
-    define('DB_USER', $_DB_USER);
-    define('DB_PASSWORD', $_DB_PASSWORD);
-    define('DB_HOST', $_DB_HOST);
-} 
-
 //-----------------------------------------------------------------------------
 /**
 // The name of the database for WordPress 
@@ -74,26 +52,6 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-/**#@+
- * Authentication Unique Keys and Salts.
- *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
- *
- * @since 2.6.0
- */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
-/**#@-*/
-
 /**
  * WordPress Database Table prefix.
  *
@@ -114,6 +72,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
+ 
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
