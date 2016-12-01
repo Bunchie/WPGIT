@@ -1,12 +1,12 @@
 <?php
 
-$_DB_NAME='WP_RESUME';
+$_DB_NAME='';
 
-$_DB_USER='root';
+$_DB_USER='';
 
 $_DB_PASSWORD='';
 
-$_DB_HOST='localhost';
+$_DB_HOST='';
 
 // ** MySQL settings - You can get this info from your web host ** //
 
@@ -19,10 +19,10 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 // ** MySQL settings - You can get this info from your web host  ** //
 
 if (WP_ENV == 'development') {
-    define('DB_NAME', $_DB_NAME);
-    define('DB_USER', $_DB_USER);
-    define('DB_PASSWORD', $_DB_PASSWORD);
-    define('DB_HOST', $_DB_HOST);
+    define('DB_NAME', 'name-db');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_HOST', 'localhost');
 } else {
     define('DB_NAME', $_DB_NAME);
     define('DB_USER', $_DB_USER);

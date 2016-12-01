@@ -31,20 +31,14 @@ define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
 //-----------------------------------------------------------------------------
-/**
-// The name of the database for WordPress 
-define('DB_NAME', 'database_name_here');
 
-// MySQL database username 
-define('DB_USER', 'username_here');
 
-// MySQL database password 
-define('DB_PASSWORD', 'password_here');
+/** Setting Autosave interval. */
+define('AUTOSAVE_INTERVAL', 365 ); // in seconds!
 
-// MySQL hostname 
-define('DB_HOST', 'localhost');
-*/
-//-----------------------------------------------------------------------------
+/** secure SSL-connection. */
+define('FORCE_SSL_LOGIN', true);
+define('FORCE_SSL_ADMIN', true);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
