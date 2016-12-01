@@ -55,11 +55,7 @@ All console administrator page (/ wp-admin) will now be encrypted SSL. Do not fo
 
 <h1> <b> Setup </b> </h1>
 
-If we now go to the submodules directory and see that they are empty.
-
-In order to restore the integrity of the project need to clone the desired version of the submodules.
-
-We go to the folder wordprees and run the command:
+If we now go to the submodules directory and see that they are empty. In order to restore the integrity of the project need to clone the desired version of the submodules. We go to the folder wordprees and run the command:
 
 <code> git submodule update --init </code>
 
