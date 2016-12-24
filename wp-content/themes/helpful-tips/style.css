@@ -1,0 +1,168 @@
+/*
+Theme Name: Helpful-Tips
+Theme URI: -
+Author: Vadim S.E.
+Author URI: -
+Description: For Fun
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: -
+Tags: blog, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: Helpful-tips
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page_item {
+    display: inline-block;
+    margin: 5px;
+}
+
+.menu-header {
+    display: inline-block;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    float: left;
+}
+
+.header-li {
+    text-align: center;
+    display: inline-block;
+    height: 100px;
+
+}
+
+.header-li li {
+    height: 44px;
+    list-style-type: none;
+    display: inline-block;
+    background-color: #2D2E2F;
+    padding: 25px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.header-li li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+
+}
+
+.url-home a {
+    text-decoration: none;
+    color: #2D2E2F;
+}
+
+.search-input {
+
+    float: right;
+    margin: 5px;
+    margin-top: 40px;
+}
+
+.search-button {
+    float: right;
+    margin-left: 5px;
+}
+
+.site-name {
+    margin: auto 0;
+    padding: 0;
+    color: #2D2E2F;
+    margin-bottom: 20px;
+}
+
+.menu-ask {
+    margin: auto 0;
+    padding: 0;
+    color: #2D2E2F;
+    margin-bottom: 20px;
+
+}
+
+.sidebar {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 10px;
+
+}
+
+.img-style {
+    float: left;
+}
+
+.header {
+    width: 100%;
+    background-color: #2D2E2F;
+}
+
+.footer {
+    width: 100%;
+    background-color: #2D2E2F;
+}
+
+.panel-content {
+    padding: 0;
+}
+
+.panel-sidebar {
+    padding: 0;
+}
+
+.title-content {
+    font-size: 20px;
+}
+
+.time-published {
+    float: right;
+    margin: 3.5px;
+}
+
+.tags a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 35px;
+    background-color: #BBBFC3;
+    padding: 5px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.not-found {
+    text-align: center;
+}
+
+.body-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.vidget ul li {
+    list-style-type: none;
+}
+
+.footer-block {
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+}
+
+.logo {
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+}
