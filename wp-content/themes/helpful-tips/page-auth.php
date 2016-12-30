@@ -6,29 +6,13 @@
 
         <hr>
 
-        <div class="col-md-10 panel-content"> <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="col-md-10 auth-body"> <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                <div class="panel panel-default">
+                <div class="panel panel-default auth-form">
 
-                    <div class="panel-heading">
+                    <?php the_content(); ?>
 
-                        <span class="title-content">
-
-                            <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-
-                        </span>
-
-                    </div>
-
-                    <div class="panel-body body-content">
-
-                        <?php the_post_thumbnail('full', 'class=img-style'); ?>
-
-                        <?php the_content(); ?>
-                        
-                        <p> <?php the_tags('<span class="tags">', ' ', '</span>'); ?> </p>
-
-                    </div>
+                    <p> <?php the_tags('<span class="tags">', ' ', '</span>'); ?> </p>
 
                 </div>
 

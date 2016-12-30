@@ -26,10 +26,7 @@
 
                         <?php the_post_thumbnail('full', 'class=img-style'); ?>
 
-                        <?php the_excerpt(); ?>
-						
-						<?php the_content(); ?>
-                     
+                        <?php the_content(); ?>
 
                         <p> <?php the_tags('<span class="tags">', ' ', '</span>'); ?> </p>
 
@@ -62,17 +59,18 @@
                 </div>
 
             <?php else: ?>
-                
-                <div class="not-found">
-                    <h1> Posts not found </h1>
-                </div>
 
+                <div class="not-found">
+
+                    <h1> Posts not found </h1>
+
+                </div>
 
             <?php endif; ?>
 
         </div>
 
-        <div class="col-md-2"> <?php get_sidebar(); ?> </div>
+        <div class="col-md-2 panel-sidebar"> <?php get_sidebar(); ?> </div>
 
     </div>
 

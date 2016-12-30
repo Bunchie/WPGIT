@@ -18,6 +18,7 @@ function sv_auth_main()
         
         // sanitize user form input
         global $username, $password, $email, $website, $first_name, $last_name, $nickname, $bio;
+        
         $username = sanitize_user($_POST['username']);
         $password = esc_attr($_POST['password']);
         $email = sanitize_email($_POST['email']);

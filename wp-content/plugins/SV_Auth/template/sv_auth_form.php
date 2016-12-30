@@ -13,7 +13,7 @@
 
 function sv_auth_form($username, $password, $email, $website, $first_name, $last_name, $nickname, $bio)
 {
-    echo ' <form action = "' . $_SERVER['REQUEST_URI'] . '" method = "POST" >
+    echo '<form action = "' . $_SERVER['REQUEST_URI'] . '" method = "POST" >
          <div class="form-group">
             <label for = "username"> Username <strong>*</strong></label>
             <input class="form-control" type = "text" id = "username" name = "username" value = "' . (isset($_POST['username']) ? $username : null) . '">

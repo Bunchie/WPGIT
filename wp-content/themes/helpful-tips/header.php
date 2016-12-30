@@ -16,7 +16,7 @@
 
 <header class="header">
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row">
 
@@ -39,23 +39,34 @@
 
             </div>
 
-            <form class="form-inline" role="form">
-
-                <div class="form-group search-input">
-
-                    <input class="form-control " type="search" id="search-input" name="s"
-                           placeholder="search for"/>
-
-                    <button type="submit" class="btn btn-default search-button"> Search </button>
-
-                </div>
-
-            </form>
-
         </div>
 
     </div>
 
 </header>
+
+<div class="container-for-search">
+
+    <form role="form" class="form-search">
+
+        <div class="input-group input-group-lg">
+
+            <input type="text" class="form-control" type="search" id="search-input" name="s"
+
+                   placeholder="search for">
+
+    <span class="input-group-btn">
+
+        <button type="submit" class="btn btn-default"> Search</button>
+
+      </span>
+
+        </div>
+
+    </form>
+    
+</div>
+
+
 
 

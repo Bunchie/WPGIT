@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
 
 <div class="container">
@@ -24,7 +23,8 @@
                     <div class="panel-body body-content">
 
                         <?php wp_login_form(); ?>
-                        <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>" title="Забыли пароль?">Забыли пароль?</a>
+                        <a href="<?php echo esc_url(wp_lostpassword_url()); ?>" title="Забыли пароль?">Забыли
+                            пароль?</a>
 
                     </div>
 

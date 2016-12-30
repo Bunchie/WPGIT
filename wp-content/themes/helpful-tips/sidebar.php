@@ -6,9 +6,9 @@
 
             <div class="panel-body">
 
-                <?php if(!dynamic_sidebar('sidebar')): ?>
+                <?php if (!dynamic_sidebar('sidebar')): ?>
 
-                <?php wp_list_categories(array('title_li' => '', 'style' => 'list')); ?>
+                    <?php wp_list_categories(array('title_li' => '', 'style' => 'list')); ?>
 
                 <?php endif; ?>
 
@@ -17,5 +17,5 @@
         </div>
 
     </div>
-    
+
 </div>

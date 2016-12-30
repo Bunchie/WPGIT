@@ -33,7 +33,6 @@ Text Domain: Helpful-tips
     text-align: center;
     display: inline-block;
     height: 100px;
-
 }
 
 .header-li li {
@@ -50,7 +49,6 @@ Text Domain: Helpful-tips
     color: white;
     font-size: 25px;
     margin: 10px;
-
 }
 
 .url-home a {
@@ -58,16 +56,12 @@ Text Domain: Helpful-tips
     color: #2D2E2F;
 }
 
-.search-input {
-
-    float: right;
-    margin: 5px;
-    margin-top: 40px;
+.form-search {
+    margin: 30px;
 }
 
-.search-button {
-    float: right;
-    margin-left: 5px;
+.container-for-search {
+    text-align: center;
 }
 
 .site-name {

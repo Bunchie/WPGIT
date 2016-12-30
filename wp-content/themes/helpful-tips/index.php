@@ -59,13 +59,13 @@
                 </div>
 
             <?php else: ?>
-                
+
                 <div class="not-found">
 
                     <h1> Posts not found </h1>
-                    
+
                 </div>
-                
+
             <?php endif; ?>
 
         </div>
